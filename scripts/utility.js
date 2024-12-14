@@ -30,17 +30,34 @@ function setTextElementValueById(elementId, value){
     element.innerText = value;
 }
 
+function getElementTextById(elementId){
+    const element = document.getElementById(elementId);
+    const text = element.innerText;
+    return text;
+
+}
+
 function getARandomAlphabet(){
-    // get or creat an alphabet array
     const alphabetString = 'abcdefghijklmnopqrstubwxyz';
     const alphabets = alphabetString.split('');
-    // console.log(alphabets);
 
-    // get a random index between 0-25
     const randomNumber = Math.random()*25;
     const index = Math.round(randomNumber);
 
     const alphabet = alphabets[index];
-    // console.log(index, alphabet);
     return alphabet;
 }
+// function getARandomAlphabet(){
+//     // get or creat an alphabet array
+//     const alphabetString = 'abcdefghijklmnopqrstubwxyz';
+//     const alphabets = alphabetString.split('');
+//     // console.log(alphabets);
+
+//     // get a random index between 0-25
+//     const randomNumber = Math.random()*25;
+//     const index = Math.round(randomNumber);
+
+//     const alphabet = alphabets[index];
+//     // console.log(index, alphabet);
+//     return alphabet;
+// }
